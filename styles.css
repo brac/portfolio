@@ -153,12 +153,15 @@ html{box-sizing: border-box;}
   }
 
   .footer-email-button{
+    color: black;
+    text-decoration: none;
     padding: 1em 2em 1em 2em;
     border: 1px solid lightblue;
     border-radius: 5%;
   }
 
   .footer-email-button:hover{
+
     background-color: lightblue;
     color: white;
   }
