@@ -169,6 +169,7 @@ html{box-sizing: border-box;}
     padding: 1em 2em 1em 2em;
     border: 1px solid lightblue;
     border-radius: 5%;
+    transition: background-color .1s, color .1s linear;
   }
 
   .footer-email-button:hover{
