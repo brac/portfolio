@@ -194,6 +194,7 @@ html{box-sizing: border-box;}
 .main-projects{
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-top: 1px solid grey;
 }
 
@@ -204,6 +205,8 @@ html{box-sizing: border-box;}
   display: flex;
   flex-direction: column;
   padding: 0 8% 0 8%;
+  max-width: 925px;
+
 }
 
 .main-projects-thumb{
@@ -228,6 +231,19 @@ html{box-sizing: border-box;}
 
 
 
+
+
+.main-projects-project-button{
+  border: 2px solid skyblue;
+  border-radius: 3px;
+  padding: 1em;
+  position: absolute;
+
+  margin-top: 6.5em;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
 
 
 
