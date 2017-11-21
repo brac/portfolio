@@ -45,7 +45,10 @@ html{box-sizing: border-box;}
 
 .main-projects-project-keywords{
   color: skyblue;
+}
 
+.main-projects-project-title{
+  font-weight: 700;
 }
 
 /* STRUCTURE ---------------------------------------*/
@@ -175,9 +178,6 @@ html{box-sizing: border-box;}
     text-align: center;
     padding: 3em;
   }
-
-
-
 
 .main-projects{
   display: flex;
