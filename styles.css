@@ -43,6 +43,11 @@ html{box-sizing: border-box;}
   font-weight: 100;
 }
 
+.main-projects-project-keywords{
+  color: skyblue;
+
+}
+
 /* STRUCTURE ---------------------------------------*/
 .pagewrap{
   border: .5em solid grey;
@@ -184,12 +189,31 @@ html{box-sizing: border-box;}
   padding: 40px 8% 40px 8%;
 }
 .main-projects-project{
+  display: flex;
+  flex-direction: column;
   padding: 0 8% 0 8%;
 }
 
 .main-projects-thumb{
-  width: 300px;
+  width: 100%;
+  padding-bottom: 1.6em;
 }
+
+.main-projects-project-keywords{
+  padding-bottom: 1.6em;
+}
+
+.main-projects-project-title{
+  border-bottom: 1px solid grey;
+  padding-bottom: 2em;
+  margin-bottom: 3em;
+}
+
+.final-title{
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
 
 
 
