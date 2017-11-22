@@ -45,6 +45,10 @@ html{box-sizing: border-box;}
 
 .main-projects-project-keywords{
   color: skyblue;
+}
+
+.main-projects-project-button-text{
+  color:white;
 
 }
 
@@ -238,14 +242,26 @@ html{box-sizing: border-box;}
   border-radius: 3px;
   padding: 1em;
   position: absolute;
-
-  margin-top: 6.5em;
+  margin-top: 8em;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 3;
+  opacity: 0;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.main-projects-project:hover .main-projects-project-button{
+  display: block;
+  opacity: 1;
+  margin-top: 6.5em
 
 }
 
-
+.main-projects-project:hover .main-projects-project-thumb{
+  filter: brightness(40%);
+  transition: .2s linear;
+}
 
 
 
