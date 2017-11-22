@@ -70,7 +70,7 @@ html{box-sizing: border-box;}
     position: relative;
     border: 4px solid grey;
     padding: 1em;
-    transition: background-color .2s, transform .2s linear;
+    transition: transform .4s ease-in-out;
     cursor: pointer;
     z-index: 1;
   }
@@ -83,7 +83,6 @@ html{box-sizing: border-box;}
     }
 
   .header-button:hover{
-
     transform: rotate(90deg);
   }
 
@@ -118,7 +117,11 @@ html{box-sizing: border-box;}
 
 
     .header-nav-social-menu{
-      display: none;
+      /*display: none;*/
+    }
+
+    .header-nav-social-github{
+      margin-left: 2em;
     }
 
 .main{
