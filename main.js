@@ -1,3 +1,3 @@
 (function () {
-  console.log('JS satnding by');
+  console.log('Make the Visit Project Button work');
 })();
