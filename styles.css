@@ -86,17 +86,19 @@ html{box-sizing: border-box;}
     transform: rotate(90deg);
   }
 
+  .header-button:hover ~ .header-button-text{
+    color: skyblue;
+  }
+
   .header-nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-
   }
 
   .header-nav-item{
     padding-bottom: .2em;
     border-bottom: 2px solid white;
-
   }
 
   .header-nav-item:hover{
