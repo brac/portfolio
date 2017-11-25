@@ -114,14 +114,18 @@ html{box-sizing: border-box;}
     flex-direction: row;
   }
 
-
-  .header-nav-social:hover{
-    background-color: lightblue;
+  .header-nav-social-title{
+    cursor: pointer;
   }
 
-
     .header-nav-social-menu{
-      /*display: none;*/
+      display: none;
+
+
+    }
+
+    .header-nav-social-menu-show{
+      display: block;
     }
 
     .header-nav-social-github{
