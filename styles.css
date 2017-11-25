@@ -95,6 +95,8 @@ html{box-sizing: border-box;}
 
   .header-nav-item{
     padding-bottom: .2em;
+    border-bottom: 2px solid white;
+
   }
 
   .header-nav-item:hover{
