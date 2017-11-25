@@ -216,17 +216,34 @@ html{box-sizing: border-box;}
 
 
 
+
+
 .main-resume{
   padding: 0 8% 0 8%;
 }
 
+.resume-title,
+.resume-summary,
+.resume-highlights,
+.resume-experience,
+.resume-education,
+.resume-languages{
+  border-bottom: 2px solid skyblue;
+  padding-bottom: 5px;
+}
 
+.resume-summary,
+.resume-highlights,
+.resume-experience,
+.resume-education,
+.resume-languages{
+  padding-top: 1.5em;
+  margin-bottom: 6px;
+}
 
-
-
-
-
-
+.resume-highlights ~ li{
+  color:red;
+}
 
 
 
