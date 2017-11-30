@@ -491,6 +491,7 @@ body{
     }
 
 .footer-links{
+  white-space: nowrap;
   flex-basis: 90px;
   display: flex;
   flex-direction: row;
@@ -797,8 +798,17 @@ body{
 
   .orderbar-orderbutton{
     padding-bottom: 2em;
+  }
 
+  .footer-links{
+    flex-direction: column;
+    margin: auto;
+    flex-basis: auto;
+    text-align: center;
+  }
 
+  .footer-link{
+    padding-top: .5em;
   }
 
 }
