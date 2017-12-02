@@ -799,6 +799,9 @@ body{
   .orderbar-orderbutton{
     padding-bottom: 2em;
   }
+}
+
+@media screen and (max-width: 745px){
 
   .footer-links{
     flex-direction: column;
@@ -810,5 +813,4 @@ body{
   .footer-link{
     padding-top: .5em;
   }
-
 }
