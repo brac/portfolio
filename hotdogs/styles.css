@@ -800,6 +800,7 @@ body{
   .orderbar-orderbutton{
     padding-bottom: 2em;
   }
+
 }
 
 @media screen and (max-width: 745px){
@@ -809,6 +810,7 @@ body{
     margin: auto;
     flex-basis: auto;
     text-align: center;
+
   }
 
   .footer-link{
