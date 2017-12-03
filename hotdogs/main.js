@@ -8,8 +8,11 @@ $(document).ready(function(){
 
   // Show modal on item click
   $('.menu-item').on('click', function (event) {
-    $('.item-modal').addClass('item-show');
-    $('.overlay').addClass('show');
+
+    console.log($(event.target).parents().hasClass('menu-item'));
+
+    // $('.item-modal').addClass('item-show');
+    // $('.overlay').addClass('show');
   });
 
   // Close hours modal on x button click
