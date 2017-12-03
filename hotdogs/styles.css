@@ -336,11 +336,12 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .menu-item{
   width: 225px;
-  margin: .5em;
+  /*margin: .5em;*/
   padding-bottom: 2em;
   display: flex;
   flex-direction: column;
@@ -812,5 +813,15 @@ body{
 
   .footer-link{
     padding-top: .5em;
+  }
+}
+
+.phantom-item{
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1150px){
+  .phantom-item{
+    display: none;
   }
 }
