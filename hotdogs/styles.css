@@ -336,11 +336,11 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .menu-item{
   width: 225px;
+  margin: .5em;
   padding-bottom: 2em;
   display: flex;
   flex-direction: column;
