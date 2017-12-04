@@ -8,11 +8,12 @@ $(document).ready(function(){
 
   // Show modal on item click
   $('.menu-item').on('click', function (event) {
+    // Find the id of the item container and split it to get the name of the dog
+    var clickedId= $(this).attr("id").split('-')[1];
 
-    console.log($(event.target).parents().hasClass('menu-item'));
-
-    // $('.item-modal').addClass('item-show');
-    // $('.overlay').addClass('show');
+    // Show the corresponding modal and bring up the overlay
+    $('#item-modal-' + clickedId ).addClass('item-show');
+    $('.overlay').addClass('show');
   });
 
   // Close hours modal on x button click

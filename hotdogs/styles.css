@@ -632,8 +632,46 @@ body{
   flex-basis: 316px;
   background-color: red;
   background-size: 475px 316px;
-  background-image: url("https://s-i.huffpost.com/gadgets/slideshows/316613/slide_316613_2899251_free.jpg");
+}
 
+#item-modal-corndog > .item-modal-img-container{
+  background-image: url("images/corndog.jpg");
+}
+
+#item-modal-whitebreaddog > .item-modal-img-container{
+  background-image: url("images/krautdog.jpg");
+}
+
+#item-modal-smothereddog > .item-modal-img-container{
+  background-image: url("images/smothereddog.jpg");
+}
+
+#item-modal-potatoedog > .item-modal-img-container{
+  background-image: url("images/pototadog.jpg");
+}
+
+#item-modal-relishdog > .item-modal-img-container{
+  background-image: url("images/relishdog.jpg");
+}
+
+#item-modal-chilidog > .item-modal-img-container{
+  background-image: url("images/chillidog.jpg");
+}
+
+#item-modal-lennydog > .item-modal-img-container{
+  background-image: url("images/classicdog.jpg");
+}
+
+#item-modal-cabbagedog > .item-modal-img-container{
+  background-image: url("images/cabbagedog.jpg");
+}
+
+#item-modal-mayodog > .item-modal-img-container{
+  background-image: url("images/mayodog.jpg");
+}
+
+#item-modal-cilantrodog > .item-modal-img-container{
+  background-image: url("images/cilantrodog.jpg");
 }
 
 .item-x-button{
