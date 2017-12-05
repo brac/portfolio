@@ -27,4 +27,11 @@ $(document).ready(function(){
     $('.item-modal').removeClass('item-show');
     $('.overlay').removeClass('show');
   });
+
+  $('.item-modal-button-addtocart').on('click', function(event){
+    $('.item-modal').removeClass('item-show');
+    $('.overlay').removeClass('show');
+  });
+
+
 });
