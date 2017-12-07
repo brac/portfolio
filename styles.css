@@ -266,6 +266,10 @@ html{box-sizing: border-box;}
   cursor: pointer;
 }
 
+.main-projects-project-thumb{
+  border-radius: 5px;
+}
+
 .main-projects-project-thumb-dark{
   filter: brightness(40%);
   transition: .2s linear;
