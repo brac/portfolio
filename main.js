@@ -1,15 +1,27 @@
 $(document).ready(function(){
 
-  //Project thumbnail change and see project button on click
+  //Project thumbnail change and see project button on hover
   $('.main-projects-project-thumb').hover(function(event){
-    $(event.target).addClass('main-projects-project-thumb-dark');
-    $('.main-projects-project-button').addClass('main-projects-project-button-show');
+    var el = $(event.target);
+    var button = $('.main-projects-project-button');
 
+    // Show the overlay and  button
+    el.addClass('main-projects-project-thumb-dark');
+    button.addClass('main-projects-project-button-show');
 
+  // Callback for hover off, hide the overlay and button
   }, function(event){
-    $(event.target).removeClass('main-projects-project-thumb-dark');
-    $('.main-projects-project-button').removeClass('main-projects-project-button-show');
+     if ($(event.relatedTarget).hasClass('main-projects-project-button')) {
+      // console.log('holding');
+     } else {
+      $(event.target).removeClass('main-projects-project-thumb-dark');
+      $('.main-projects-project-button').removeClass('main-projects-project-button-show');
+    }
   });
+
+
+
+
 
   //Header social menu expand on click
   $('.header-nav-social-title').on('click', function(event){
