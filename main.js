@@ -3,7 +3,9 @@ $(document).ready(function(){
   //Project thumbnail change and see project button on hover
   $('.main-projects-project-thumb').hover(function(event){
     var el = $(event.target);
-    var button = $('.main-projects-project-button');
+
+    // Find the right button based on the data-button attribute of the hovered div
+    var button = $('.main-projects-project-button[data-button="'+($(this).data("button"))+'"]') ;
 
     // Show the overlay and  button
     el.addClass('main-projects-project-thumb-dark');
@@ -20,9 +22,6 @@ $(document).ready(function(){
   });
 
 
-
-
-
   //Header social menu expand on click
   $('.header-nav-social-title').on('click', function(event){
     var menu = $('.header-nav-social-menu');
@@ -32,9 +31,5 @@ $(document).ready(function(){
       menu.addClass('header-nav-social-menu-show');
     }
   });
-
-
-
-
 
 });
