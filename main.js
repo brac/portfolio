@@ -13,8 +13,9 @@ $(document).ready(function(){
 
   // Callback for hover off, hide the overlay and button
   }, function(event){
+     // If user is hovering on the button element, don't do anything
      if ($(event.relatedTarget).hasClass('main-projects-project-button')) {
-      // console.log('holding');
+      // do nothing
      } else {
       $(event.target).removeClass('main-projects-project-thumb-dark');
       $('.main-projects-project-button').removeClass('main-projects-project-button-show');

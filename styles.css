@@ -246,13 +246,12 @@ html{box-sizing: border-box;}
   margin-bottom: 0;
 }
 
-
-
 .main-resume{
   padding: 0 8% 0 8%;
 }
 
 .main-projects-project-button{
+  display: block;
   border: 2px solid skyblue;
   border-radius: 3px;
   padding: 1em;
@@ -264,6 +263,7 @@ html{box-sizing: border-box;}
   opacity: 0;
   transition: .2s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .main-projects-project-thumb{
@@ -277,6 +277,7 @@ html{box-sizing: border-box;}
 
 
 .main-projects-project-button-show{
+  display: block;
   opacity: 1;
   margin-top: 6.5em;
   transition: .2s linear;
