@@ -250,6 +250,7 @@ html{box-sizing: border-box;}
   padding: 0 8% 0 8%;
 }
 
+
 .main-projects-project-button{
   display: block;
   border: 2px solid skyblue;
@@ -266,15 +267,64 @@ html{box-sizing: border-box;}
   text-decoration: none;
 }
 
+.resume-title{
+  border-bottom: 2px solid skyblue;
+  margin-bottom: 20px;
+}
+
+.resume-item{
+  padding-bottom: 30px;
+}
+
+
+  .resume-item-title{
+    border-bottom: 2px solid skyblue;
+    padding-bottom: 3px;
+    margin-bottom: .8em;
+  }
+
+  .resume-item li{
+    list-style: none;
+    /*list-style: circle;*/
+  }
+
+
+
+
+
 .main-projects-project-thumb{
   border-radius: 5px;
 }
+
 
 .main-projects-project-thumb-dark{
   filter: brightness(40%);
   transition: .2s linear;
 }
 
+  .experience-item{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    max-width: 70%;
+    padding-bottom: 1em;
+  }
+
+
+  .experience-item:last-child{
+    padding-bottom: 0;
+  }
+  .experience-item-title{
+    font-size: .8em;
+    padding-bottom: .5em;
+  }
+
+  .experience-item-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+  }
 
 .main-projects-project-button-show{
   display: block;
@@ -288,6 +338,30 @@ html{box-sizing: border-box;}
   margin-top: 6.5em;
   transition: .2s linear;
 }*/
+
+  }
+
+  .experience-item-duties li{
+    list-style: circle;
+    margin-left: 1.1em;
+  }
+
+.resume-item-skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+
+.resume-item-skills li{
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid lightblue;
+  border-radius: 5%;
+}
+
+
+
 
 
 /* MEDIA QUERIES -----------------------------------*/
