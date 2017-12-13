@@ -228,7 +228,7 @@ html{box-sizing: border-box;}
 }
 
 .resume-item{
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 
@@ -276,8 +276,19 @@ html{box-sizing: border-box;}
     margin-left: 1.1em;
   }
 
+.resume-item-skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
 
-
+.resume-item-skills li{
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid lightblue;
+  border-radius: 5%;
+}
 
 
 
