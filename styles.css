@@ -18,7 +18,7 @@ html{box-sizing: border-box;}
   font-weight: 700;
 }
 
-.header-button{
+.header-button-text{
   font-weight: 100;
 }
 
@@ -45,7 +45,15 @@ html{box-sizing: border-box;}
 
 .main-projects-project-keywords{
   color: skyblue;
+}
 
+
+.main-projects-project-button-text{
+  color:white;
+}
+
+.main-projects-project-title{
+  font-weight: 700;
 }
 
 /* STRUCTURE ---------------------------------------*/
@@ -63,24 +71,38 @@ html{box-sizing: border-box;}
 }
 
   .header-button{
+    position: relative;
     border: 4px solid grey;
-    padding: .5em .5em .4em .5em;
+    padding: 1em;
+    transition: transform .4s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
   }
 
+    .header-button-text{
+      position: absolute;
+      top: 4.25em;
+      left: 3.1em;
+      z-index: 0;
+    }
+
   .header-button:hover{
-    background-color: lightblue;
     transform: rotate(90deg);
+  }
+
+  .header-button:hover ~ .header-button-text{
+    color: skyblue;
   }
 
   .header-nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-
   }
 
   .header-nav-item{
     padding-bottom: .2em;
+    border-bottom: 2px solid white;
   }
 
   .header-nav-item:hover{
@@ -96,14 +118,22 @@ html{box-sizing: border-box;}
     flex-direction: row;
   }
 
-
-  .header-nav-social:hover{
-    background-color: lightblue;
+  .header-nav-social-title{
+    cursor: pointer;
   }
-
 
     .header-nav-social-menu{
       display: none;
+
+
+    }
+
+    .header-nav-social-menu-show{
+      display: block;
+    }
+
+    .header-nav-social-github{
+      margin-left: 2em;
     }
 
 .main{
@@ -163,6 +193,7 @@ html{box-sizing: border-box;}
     padding: 1em 2em 1em 2em;
     border: 1px solid lightblue;
     border-radius: 5%;
+    transition: background-color .1s, color .1s linear;
   }
 
   .footer-email-button:hover{
@@ -176,12 +207,10 @@ html{box-sizing: border-box;}
     padding: 3em;
   }
 
-
-
-
 .main-projects{
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-top: 1px solid grey;
 }
 
@@ -192,14 +221,17 @@ html{box-sizing: border-box;}
   display: flex;
   flex-direction: column;
   padding: 0 8% 0 8%;
+  max-width: 925px;
+
 }
 
 .main-projects-thumb{
   width: 100%;
-  padding-bottom: 1.6em;
+  background-color: red;
 }
 
 .main-projects-project-keywords{
+  padding-top: 1.6em;
   padding-bottom: 1.6em;
 }
 
@@ -214,12 +246,25 @@ html{box-sizing: border-box;}
   margin-bottom: 0;
 }
 
-
-
-
-
 .main-resume{
   padding: 0 8% 0 8%;
+}
+
+
+.main-projects-project-button{
+  display: block;
+  border: 2px solid skyblue;
+  border-radius: 3px;
+  padding: 1em;
+  position: absolute;
+  margin-top: 8em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  opacity: 0;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .resume-title{
@@ -247,6 +292,16 @@ html{box-sizing: border-box;}
 
 
 
+.main-projects-project-thumb{
+  border-radius: 5px;
+}
+
+
+.main-projects-project-thumb-dark{
+  filter: brightness(40%);
+  transition: .2s linear;
+}
+
   .experience-item{
     display: flex;
     flex-direction: column;
@@ -254,6 +309,7 @@ html{box-sizing: border-box;}
     max-width: 70%;
     padding-bottom: 1em;
   }
+
 
   .experience-item:last-child{
     padding-bottom: 0;
@@ -268,6 +324,20 @@ html{box-sizing: border-box;}
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 2px solid grey;
+  }
+
+.main-projects-project-button-show{
+  display: block;
+  opacity: 1;
+  margin-top: 6.5em;
+  transition: .2s linear;
+}
+
+/*.main-projects-project-button:`{
+  opacity: 1;
+  margin-top: 6.5em;
+  transition: .2s linear;
+}*/
 
   }
 
@@ -289,6 +359,7 @@ html{box-sizing: border-box;}
   border: 1px solid lightblue;
   border-radius: 5%;
 }
+
 
 
 
