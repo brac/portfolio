@@ -215,6 +215,9 @@ html{box-sizing: border-box;}
 }
 
 
+
+
+
 .main-resume{
   padding: 0 8% 0 8%;
 }
@@ -229,34 +232,48 @@ html{box-sizing: border-box;}
 }
 
 
-  .resume-item h3{
+  .resume-item-title{
     border-bottom: 2px solid skyblue;
     padding-bottom: 3px;
+    margin-bottom: .8em;
   }
 
   .resume-item li{
     list-style: none;
+    /*list-style: circle;*/
   }
+
+
+
+
 
   .experience-item{
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    max-width: 40%;
+    max-width: 70%;
+    padding-bottom: 1em;
   }
 
-  .experience-item-description{
+  .experience-item:last-child{
+    padding-bottom: 0;
+  }
+  .experience-item-title{
     font-size: .8em;
+    padding-bottom: .5em;
   }
 
   .experience-item-name{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 2px solid grey;
+
   }
 
-  .experience-item-duties{
+  .experience-item-duties li{
     list-style: circle;
+    margin-left: 1.1em;
   }
 
 
