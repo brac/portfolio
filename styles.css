@@ -161,11 +161,11 @@ html{box-sizing: border-box;}
       /* Set a specific height */
       height: 400px;
 
-      /* Create the parallax scrolling effect */
+       Create the parallax scrolling effect
       background-attachment: fixed;
-      background-position: center 90%;
+      background-position: center 75%;
       background-repeat: no-repeat;
-      background-size: 80%;
+      background-size: 90%;
   }
 
 
@@ -322,9 +322,10 @@ html{box-sizing: border-box;}
   .experience-item{
     display: flex;
     flex-direction: column;
-    white-space: nowrap;
-    max-width: 70%;
-    padding-bottom: 1em;
+    /*white-space: nowrap;*/
+    /*max-width: 90%;*/
+    margin-bottom: 2em;
+    /*background-color: pink;*/
   }
 
 
@@ -332,11 +333,13 @@ html{box-sizing: border-box;}
     padding-bottom: 0;
   }
   .experience-item-title{
+    font-weight:bold;
     font-size: .8em;
     padding-bottom: .5em;
   }
 
   .experience-item-name{
+    font-weight:bold;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -349,14 +352,6 @@ html{box-sizing: border-box;}
   margin-top: 6.5em;
   transition: .2s linear;
 }
-
-/*.main-projects-project-button:`{
-  opacity: 1;
-  margin-top: 6.5em;
-  transition: .2s linear;
-}*/
-
-  }
 
   .experience-item-duties li{
     list-style: circle;
@@ -378,7 +373,15 @@ html{box-sizing: border-box;}
 }
 
 
-
-
-
 /* MEDIA QUERIES -----------------------------------*/
+
+
+@media screen and (max-width: 750px){
+  .parallax{
+    background-attachment: scroll;
+  }
+}
+
+
+
+
