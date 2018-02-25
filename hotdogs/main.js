@@ -32,6 +32,4 @@ $(document).ready(function(){
     $('.item-modal').removeClass('item-show');
     $('.overlay').removeClass('show');
   });
-
-
 });

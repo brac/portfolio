@@ -485,8 +485,7 @@ body{
       padding-right: 1em;
       margin: .3em 0 .3em 0;
       border-radius: 5px;
-      border: none;
-      text-align: left;
+      border: none;      text-align: left;
       text-indent: 1em;
       background-color: rgb(57, 72, 81);
     }
@@ -826,7 +825,7 @@ body{
 }
 
 /* Media Queries ------------------------------------- */
-@media screen and (max-width: 620px){
+@media screen and (max-width: 650px){
   .orderbar{
     flex-basis: 10em;
     flex-direction: column;
@@ -863,5 +862,30 @@ body{
 @media screen and (max-width: 1150px){
   .phantom-item{
     display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .orderbar{
+    flex-basis: 10em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .orderbar-orderbutton{
+    padding-bottom: 2em;
+  }
+
+  .main-menu-items{
+    flex-direction: column;
+  }
+
+  .footer-contacts{
+      flex: 1;
+      flex-direction: column;
+      padding: 1em;
+      margin: auto;
   }
 }
