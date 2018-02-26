@@ -165,6 +165,7 @@ body{
 
 /* - Main Page container --------------------*/
 
+
 .pagewrap{
   min-width:600px;
   display: flex;
@@ -201,6 +202,7 @@ body{
   flex-direction: row;
   flex-basis: 4.4em;
   line-height: 4.4em;
+
 }
 
   .topbar-signin{
@@ -250,7 +252,7 @@ body{
   flex-direction: column;
   justify-content: flex-end;
   flex-basis: 13.9em;
-  min-width: 900px;
+  width: 100%;
   background-color: grey;
   background-image: url('images/twodogs.jpg');
   background-size: 100% auto;
@@ -270,6 +272,7 @@ body{
   display: flex;
   flex-basis: 5em;
   border-bottom: 1px solid rgb(204, 204, 204);
+
 }
 
   .orderbar-left{
@@ -320,6 +323,7 @@ body{
   height: 4.5em;
   line-height: 4.5em;
   text-align: center;
+
 }
 
 .main-menu-title{
@@ -408,7 +412,6 @@ body{
   flex-basis: 100%;
   padding-top: 4em;
   padding-bottom: 2em;
-
 }
 
 .footer-contacts{
@@ -485,7 +488,8 @@ body{
       padding-right: 1em;
       margin: .3em 0 .3em 0;
       border-radius: 5px;
-      border: none;      text-align: left;
+      border: none;
+      text-align: left;
       text-indent: 1em;
       background-color: rgb(57, 72, 81);
     }
@@ -824,24 +828,23 @@ body{
   display: flex;
 }
 
+.phantom-item{
+  visibility: hidden;
+}
+
+
+
 /* Media Queries ------------------------------------- */
-@media screen and (max-width: 650px){
-  .orderbar{
-    flex-basis: 10em;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 
-  }
 
-  .orderbar-orderbutton{
-    padding-bottom: 2em;
+@media screen and (max-width: 991px) {
+  .phantom-item{
+    display: none;
   }
 
 }
 
-@media screen and (max-width: 745px){
-
+@media screen and (max-width: 800px) {
   .footer-links{
     flex-direction: column;
     margin: auto;
@@ -853,25 +856,12 @@ body{
   .footer-link{
     padding-top: .5em;
   }
-}
 
-.phantom-item{
-  visibility: hidden;
-}
-
-@media screen and (max-width: 1150px){
-  .phantom-item{
-    display: none;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
   .orderbar{
     flex-basis: 10em;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
   }
 
   .orderbar-orderbutton{
@@ -879,13 +869,26 @@ body{
   }
 
   .main-menu-items{
-    flex-direction: column;
+    /*flex-direction: column;*/
+  }
+
+  .footer-contacts-bays{
+    align-items: center;
+    padding-bottom: 2em;
   }
 
   .footer-contacts{
-      flex: 1;
-      flex-direction: column;
-      padding: 1em;
-      margin: auto;
+    flex: 1;
+    flex-direction: column;
+    padding: 2em;
+    margin: auto;
+  }
+
+  .footer-contacts-outreach-button{
+   padding: 1em;
+  }
+
+  .footer-contacts-phone-detials{
+    margin-bottom: 1em;
   }
 }
