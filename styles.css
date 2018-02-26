@@ -143,31 +143,19 @@ html{box-sizing: border-box;}
 
 
   .main-title{
-    padding: 0 8% 12% 8%;
+    padding: 0 8% 3em 8%;
   }
 
   .main-img{
-    width: 100%;
-    margin: 0 auto 2em auto;
-    /*padding: 0 1.2em 4em 1.2em;*/
-
+    width: 75%;
+    margin: 0 auto 4em auto;
+    object-fit: cover;
 
   }
 
-  .parallax {
-      /* The image used */
-      background-image: url('images/main_img.jpg');
-
-      /* Set a specific height */
-      height: 400px;
-
-       Create the parallax scrolling effect
-      background-attachment: fixed;
-      background-position: center 75%;
-      background-repeat: no-repeat;
-      background-size: 90%;
+  .projects-title{
+    padding: 0 8% 2em 8%;
   }
-
 
   .main-item{
     padding: 0 8% 3em 8%;
