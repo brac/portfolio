@@ -310,12 +310,8 @@ html{box-sizing: border-box;}
   .experience-item{
     display: flex;
     flex-direction: column;
-    /*white-space: nowrap;*/
-    /*max-width: 90%;*/
     margin-bottom: 2em;
-    /*background-color: pink;*/
   }
-
 
   .experience-item:last-child{
     padding-bottom: 0;
