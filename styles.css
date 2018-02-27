@@ -356,14 +356,37 @@ html{box-sizing: border-box;}
   border-radius: 5%;
 }
 
+.overlay{
+  /*display: none;*/
+  background: black;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+  filter: opacity(70%);
+}
+
+.modal-player{
+  /*display: none;*/
+  position: fixed;
+  z-index: 2;
+  float: left;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-player-close{
+  cursor: pointer;
+  padding-left: 100%;
+}
+
 
 /* MEDIA QUERIES -----------------------------------*/
-
-
 @media screen and (max-width: 750px){
-  .parallax{
-    background-attachment: scroll;
-  }
+
 }
 
 
