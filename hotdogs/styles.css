@@ -206,6 +206,7 @@ body{
 }
 
   .topbar-signin{
+    white-space: nowrap;
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -360,6 +361,7 @@ body{
   .menu-item-hovertext{
     position: relative;
     color: white;
+    width: 50%;
     top: -85px;
     left: 70px;
   }
@@ -607,12 +609,9 @@ body{
   flex-direction: row;
 }
 
-
-
-
 .item-modal{
   display: none;
-  position: absolute;
+  position: fixed;
   float: left;
   top: 600px;
   left: 50%;
@@ -624,7 +623,6 @@ body{
   white-space: nowrap;
   box-shadow: 2px 2px 10px gray;
   border-radius: 5px;
-
 }
 
 .item-modal-img-container{
@@ -835,14 +833,15 @@ body{
 
 /* Media Queries ------------------------------------- */
 
+/*Large desktop*/
 
 @media screen and (max-width: 991px) {
   .phantom-item{
     display: none;
   }
-
 }
 
+/*Smaller desktop*/
 @media screen and (max-width: 749px) {
   .footer-links{
     flex-direction: column;
@@ -850,6 +849,52 @@ body{
     flex-basis: auto;
     text-align: center;
 
+  }
+
+  .footer-link{
+    padding-top: .5em;
+  }
+
+   .footer{
+    font-size: 1.5em;
+
+  }
+
+  .footer-contacts-bays{
+    align-items: center;
+    padding-bottom: 2em;
+  }
+
+  .footer-contacts{
+    flex: 1;
+    flex-direction: column;
+    padding: 2em;
+    margin: auto;
+  }
+
+  .footer-contacts-outreach-button{
+   padding: 1em;
+  }
+
+  .footer-contacts-phone-detials{
+    margin-bottom: 1em;
+  }
+
+  .footer-contacts-bays-image{
+    width: 75%;
+  }
+}
+
+
+/* mobile */
+@media only screen
+and (min-device-width : 350px)
+and (max-device-width : 667px) {
+    .footer-links{
+    flex-direction: column;
+    margin: auto;
+    flex-basis: auto;
+    text-align: center;
   }
 
   .footer-link{
@@ -892,16 +937,15 @@ body{
   }
 
   .main{
-    font-size: 1.5em;
+
   }
 
   .menu-item{
-    width: 468px;
+
+
   }
 
   .menu-item-imgholder{
-    width: auto;
-    height: 352px;
   }
 
   .footer{
@@ -932,4 +976,28 @@ body{
   .footer-contacts-bays-image{
     width: 75%;
   }
+
+  .menu-item-hovertext{
+    font-size: 1.5em;
+    color: white;
+    top: -50%;
+    left: 30%;
+  }
+
+  .item-modal{
+    /*top: 50%;*/
+    /*width: 950px;*/
+  }
+
+  .item-modal-img-container{
+    /*flex-basis: 632px;*/
+    /*background-size: 950px 632px;*/
+  }
+
+  .item-x-button{
+    /*padding: .5em 1em 1em 1em;*/
+    /*font-size: 3em;*/
+  }
 }
+
+
