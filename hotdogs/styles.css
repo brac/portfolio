@@ -1,4 +1,4 @@
- /* Reset ---------------------------------------------*/
+ /* Reset ---------------------------------------------------------------------*/
 body{
   box-sizing: border-box;
 }
@@ -10,7 +10,7 @@ body{
 }
 
 
-/* Typography ----------------------------------------*/
+/* Typography ----------------------------------------------------------------*/
 * {
   font-family: 'Helvetica Neue';
 }
@@ -161,9 +161,9 @@ body{
   color: rgb(158, 155, 162);
 }
 
-/* Structure -----------------------------------------*/
+/* Structure -----------------------------------------------------------------*/
 
-/* - Main Page container --------------------*/
+/* - Main Page container ----------------------------------------------------*/
 
 
 .pagewrap{
@@ -195,7 +195,7 @@ body{
 }
 
 
-/* - Topbar --------------------------------*/
+/* - Topbar --------------------------------------------------------*/
 
 .topbar{
   display: flex;
@@ -247,7 +247,7 @@ body{
 
 
 
-/* - Title ---------------------------------*/
+/* - Title ---------------------------------------------------------*/
 .title{
   display: flex;
   flex-direction: column;
@@ -266,7 +266,7 @@ body{
 
 
 
-/* - Orderbar -------------------------------*/
+/* - Orderbar -----------------------------------------------------------------------*/
 
 .orderbar{
   white-space: nowrap;
@@ -317,7 +317,7 @@ body{
 
 
 
-/* - Main ----------------------------------*/
+/* - Main ------------------------------------------------------------------*/
 
 .main-bigorders{
   white-space: nowrap;
@@ -335,7 +335,7 @@ body{
 }
 
 
-/* - Main Card Component --------------------*/
+/* - Main Card Component --------------------------------------------*/
 
 .main-menu-items{
   display: flex;
@@ -404,7 +404,7 @@ body{
 }
 
 
-/* - Footer -------------------------------- */
+/* - Footer ---------------------------------------------------------------- */
 
 .footer{
   background-color: #2d3d47;
@@ -521,7 +521,7 @@ body{
 }
 
 
-/* Hours Modal -----------------------------------*/
+/* Hours Modal -----------------------------------------------------------*/
 
 .hours-modal{
   display: none;
@@ -535,7 +535,6 @@ body{
   width: 450px;
   height: 375px;
   z-index: 2;
-
 }
 
 .hours-modal-container{
@@ -609,6 +608,8 @@ body{
   flex-direction: row;
 }
 
+/* item modal ---------------------------------------------------------- */
+
 .item-modal{
   display: none;
   position: absolute;
@@ -629,10 +630,11 @@ body{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-repeat: no-repeat;
-  flex-basis: 316px;
+  flex-basis: 314px;
   background-color: red;
   background-size: 475px 316px;
 }
+
 
 #item-modal-corndog > .item-modal-img-container{
   background-image: url("images/corndog.jpg");
@@ -831,7 +833,7 @@ body{
 
 
 
-/* Media Queries ------------------------------------- */
+/* Media Queries --------------------------------------------- */
 
 /*Large desktop*/
 
@@ -963,6 +965,7 @@ and (max-device-width : 667px) {
     left: 30%;
   }
 
+  /* mobile footer --------------------------------------------------*/
   .footer{
     font-size: 1.5em;
   }
@@ -1002,22 +1005,85 @@ and (max-device-width : 667px) {
     width: 75%;
   }
 
-  .hours-modal-container{
-    /*font-size: 1.5em;*/
-  }
+  /* mobile item modal --------------------------------------------- */
 
   .item-modal{
+    height: calc(130vh - -116px);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+    font-size: 1.5em;
+    white-space: normal;
+    overflow-y: auto;
   }
+
+  .item-modal-description{
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
 
   .item-x-button{
     padding: .2em .5em 1em 1em;
     font-size: 3em;
   }
-}
 
+  .item-modal-img-container{
+    /* dont grow, dont shrink, start at 316px*/
+    flex: 0 0 316px;
+  }
+
+  .item-modal-unavaiable-title{
+    padding-bottom: 1em;
+  }
+
+  .item-modal-unavailble{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .item-modal-optional{
+    margin-top: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+  }
+
+  .item-modal-optional-textfield{
+    padding-top: 0em;
+    margin-top: .4em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+
+  }
+
+  .item-modal-price-container{
+    margin-top: 1em;
+    flex: 0 0 5em;
+  }
+
+  .item-modal-price-quantity-button{
+    height: 100%;
+  }
+
+  .item-modal-button{
+    flex: 0 0 4em;
+    margin-bottom: 1em;
+  }
+
+  /* mobile hours modal ------------------------------------------------ */
+
+  .hours-modal{
+    width: 90%;
+  }
+
+  .hours-modal-container{
+    font-size: 1.4em;
+    height: auto;
+  }
+
+}
 
