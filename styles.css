@@ -364,14 +364,14 @@ html{box-sizing: border-box;}
   bottom: 0;
   right: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   filter: opacity(70%);
 }
 
 .modal-player{
   display: none;
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   float: left;
   top: 40%;
   left: 50%;
@@ -383,8 +383,12 @@ html{box-sizing: border-box;}
   padding-left: 100%;
 }
 
+.modal-player-show{
+  display: block;
+}
 
 /* MEDIA QUERIES -----------------------------------*/
+/*TODO*/
 @media screen and (max-width: 750px){
 
 }
