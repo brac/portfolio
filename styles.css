@@ -369,6 +369,9 @@ html{box-sizing: border-box;}
 }
 
 .modal-player{
+  background-color: skyblue;
+  border-radius: 1.5em;
+  padding: 1em 2em 2em 2em;
   display: none;
   position: fixed;
   z-index: 5;
@@ -376,11 +379,12 @@ html{box-sizing: border-box;}
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 1.5em 2em 2em #0a1429;
 }
 
 .modal-player-close{
   cursor: pointer;
-  padding-left: 100%;
+  float: right;
 }
 
 .modal-player-show{
