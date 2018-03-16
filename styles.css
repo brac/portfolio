@@ -369,27 +369,42 @@ html{box-sizing: border-box;}
 }
 
 .modal-player{
+}
+
+.modal-player-wrapper{
   background-color: skyblue;
   border-radius: 1.5em;
-  padding: 1em 2em 2em 2em;
+  padding: 2em;
   display: none;
   position: fixed;
   z-index: 5;
-  float: left;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 1.5em 2em 2em #0a1429;
+  box-shadow: 1.5em 2em 2em  #1a1a1a;
 }
 
 .modal-player-close{
+  display: none;
+  position: fixed;
+  left: 100%;
+  transform: translate(-114%, 3%);
+  z-index: 4;
+  padding: .75em;
   cursor: pointer;
-  float: right;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 1s ease;
 }
 
 .modal-player-show{
   display: block;
 }
+
+.modal-player-close:hover{
+  background-color: #c2c6ce;
+}
+
 
 /* MEDIA QUERIES -----------------------------------*/
 /*TODO*/

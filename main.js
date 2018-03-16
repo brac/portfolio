@@ -25,14 +25,16 @@ $(document).ready(function(){
 
   // Player Modal
   $('.player-button').on('click', event => {
-    $('.modal-player').addClass('modal-player-show')
+    $('.modal-player-wrapper').addClass('modal-player-show')
     $('.overlay').addClass('modal-player-show')
+    $('.modal-player-close').addClass('modal-player-show')
   })
 
   // close player modal on x click
   $('.modal-player-close').on('click', event => {
-    $('.modal-player').removeClass('modal-player-show')
+    $('.modal-player-wrapper').removeClass('modal-player-show')
     $('.overlay').removeClass('modal-player-show')
+    $('.modal-player-close').removeClass('modal-player-show')
   })
 
 
