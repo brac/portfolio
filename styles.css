@@ -365,7 +365,7 @@ html{box-sizing: border-box;}
   right: 0;
   position: fixed;
   z-index: 4;
-  filter: opacity(70%);
+  filter: opacity(80%);
 }
 
 .modal-player{
