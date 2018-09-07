@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="=en" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
       <a class="navbar-brand" href="#">
         <div class="navbar-button"></div>
         <span class="navbar-button-text">BB</span>
@@ -23,7 +23,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -39,15 +39,44 @@
     </nav>
   </header>
 
-  <main role="main" class="container">
-      <div class="col-sm">
-        <h1>I'm a Web Developer</h1>
+  <main class="container">
+    <div class="col-sm pt-2 mt-5">
+      <h1>Hi! I'm Ben, a Full Stack Web Developer living in Madison WI.</h1>
+      <img height="385" class="main-img" src="images/main_img.jpg" alt="basset hound mix">
+
+      <div class="mt-4 main-about main-item">
+        <h2 class="main-main-title">About:</h2>
+        <div class="main-text">Previously I lived in the San Francisco Bay Area but right now I am living in Madison WI with my beautiful wife and our two dogs, one pictured above! I am currently accepting freelance work, so don't hesitate to get in contact.</div>
       </div>
+
+      <div class="mt-3 main-services">
+        <h2 class="mb-1 main-main-title main-item">Services:</h2>
+
+        <div class="main-services-fullstack main-item">
+          <h3 class="main-services-highlight">FULL STACK WEB DEVELOPMENT</h3>
+          <p class="main-text" >Full Stack development is about building both the front-end and back-end portions of an application. Using HTML5, CSS, Javascript, SQL and Node.js I create fast, responsive web apps.</p>
+        </div>
+
+        <div class="main-services-projects main-item">
+          <h3 class="main-services-highlight">PROJECT MANAGMENT</h3>
+          <p class="main-text">Managing a Project Team takes a special blend of management skills and technical experience. Utilizing Agile methodologies such as Scrums and Rapid Prototyping, I facilitate remote and local teams to reach their milestones.</p>
+        </div>
+
+        <div class="main-services-uiux main-item">
+          <h3 class="main-services-highlight">UI/UX DESIGN</h3>
+          <p class="main-text">When designing the user I work closely with a client to iterate a site's visual structure and layout. Once a foundation is agreed upon, we design and build the site from concept to code to create a responsive and engaging user experience.</p>
+        </div>
+      </div> <!-- main-services -->
+    </div>
   </main>
 
-  <footer class="footer container">
+  <footer class="footer container bg-light">
     <div class="col-sm">
-      <span>I am the footer</span>
+      <div class="text-center">Interested in working together?</div>
+      <div class="text-center">
+        <a href="mailto:ben.bracamonte@gmail.com?subject=Let's%20work%20together" class="footer-email-button">Email me</a>
+      </div>
+      <div class="footer-copyright text-center">Copyright Ben Bracamonte 2018</div>
     </div>
   </footer>
 
