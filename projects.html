@@ -1,44 +1,132 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Ben Bracamonte, Full Stack Developer Portfolio">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-  crossorigin="anonymous">
-  <link rel="stylesheet" href="stylesOld.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.png">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="main.js"></script>
-  <title>Past Projects</title>
+  <title>Ben Bracamonte</title>
 </head>
-<body>
-  <div class="pagewrap">
-    <div class="overlay"></div><!-- overlay -->
-      <header class="header">
-      <a href="index.html">
-        <div class="header-button"></div><!-- header-button -->
-        <span class="header-button-text">BB</span>
+
+<body class="border-b">
+  <header>
+    <nav class="border-t navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+        <div class="navbar-button"></div>
+        <span class="navbar-button-text">BB</span>
       </a>
-      <div class="header-nav">
-        <a href="index.html" class="header-nav-item">Home</a>
 
-        <a href="#" class="header-nav-item">Projects</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <a href="resume.html" class="header-nav-item">Resume</a>
-      </div><!-- header-nav -->
-      </header>
+      <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Projects <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-      <main class="main">
+  <main class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="d-flex header-padding">
+          <h1 class="align-self-end">Here are some examples of work I can do for you</h1>
+        </div>
+
+        <h3 class="text-info mt-5">Examples of work:</h3>
+
+        <div>
+          <div>
+            <a href="https://dry-wildwood-46109.herokuapp.com/" target="_blank">
+              <img src="images/twodogsThumb.jpg" alt="thumbnail of a webpage with a search bar and button" class="w-100">
+            </a>
+          </div>
+
+          <a href="https://dry-wildwood-46109.herokuapp.com/" target="_blank" data-button="movie-search">
+            <div class="text-center">
+          <a href="https://dry-wildwood-46109.herokuapp.com/" class="btn btn-outline-primary">See Project &rarr;</a>
+          </div>
+          </a>
+
+          <h4 class="text-info">Movie Search Engine</h4>
+          <h5>
+            NODE.JS, EXPRESS, PSQL, MOCHA CHAI, BOOTSTRAP, HEROKU,
+            ENCRYPTION, TEMPLATING
+          </h5>
+          <p class="border-bottom pb-4">
+            Movie Search Engine: A Full Stack web application. With encrypted
+            session cookies the user creates an account whose password has
+            been hashed and stored in a SQL database. The user then searches
+            a movie title which, through the web server, queries IMBD.com
+            and scrapes the results which are sent back to the client and
+            displayed on the same page. User searches are also stored in the
+            database and are available to display.
+          </p>
+        </div>
+
+        <div>
+          <div>
+            <a href="https://bookbank.herokuapp.com/" target="_blank">
+              <img src="images/twodogsThumb.jpg" alt="thumbnail of a webpage with a search bar and button" class="w-100">
+            </a>
+          </div>
+
+          <a href="https://bookbank.herokuapp.com/" target="_blank" data-button="movie-search">
+            <div class="text-center">
+              <a href="https://bookbank.herokuapp.com/" class="btn btn-outline-primary">See Project &rarr;</a>
+            </div>
+          </a>
+
+          <h4 class="text-info">Book Bank</h4>
+          <h5>
+            REACT, NODE.JS, MONGODB, FETCH, BOOTSTRAP, GIT, HEROKU, RESTFUL DESIGN
+          </h5>
+          <p class="border-bottom pb-4">
+              Book Bank: A web app built with React that displays book
+              information from a RESTFUL api, in which the user can add
+              and edit database entries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer container-fluid bg-light border">
+    <div class="row">
+      <div class="col-sm mt-5">
+        <div class="text-center">
+          <h2>
+            Interested in working together?
+          </h2>
+        </div>
+        <div class="text-center mt-4">
+          <a href="mailto:ben.bracamonte@gmail.com?subject=Lets%20work%20together" class="btn btn-outline-primary">Email me</a>
+        </div>
+        <div class="footer-copyright text-center text-muted mt-4 mb-4">Copyright Ben Bracamonte 2018</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
+<!--
         <h1 class="projects-title">Here are some examples of work I can do for you</h1>
 
         <div class="main-projects">
@@ -61,7 +149,7 @@
               data-button="movie-search">
               <div>
                 <p class="main-projects-project-button-text">See Project &rarr;</p>
-              </div><!-- main-projects-project-button -->
+              </div>
             </a>
             <h5 class="main-projects-project-keywords">
               NODE.JS, EXPRESS, PSQL, MOCHA CHAI, BOOTSTRAP, HEROKU,
@@ -76,7 +164,7 @@
               displayed on the same page. User searches are also stored in the
               database and are available to display.
             </div>
-          </div><!-- main-projects-project -->
+          </div>
 
           <div class="main-projects-project">
             <div
@@ -101,7 +189,7 @@
                 <p class="main-projects-project-button-text">
                   See Project &rarr;
                 </p>
-              </div><!-- main-projects-project-button -->
+              </div>
             </a>
 
             <h5 class="main-projects-project-keywords">
@@ -113,7 +201,7 @@
               information from a RESTFUL api, in which the user can add
               and edit database entries
             </div>
-          </div><!-- main-projects-project -->
+          </div>
 
           <div class="main-projects-project">
             <div
@@ -138,7 +226,7 @@
                 <p class="main-projects-project-button-text">
                   See Project &rarr;
                 </p>
-              </div><!-- main-projects-project-button -->
+              </div>
             </a>
 
             <h5 class="main-projects-project-keywords">
@@ -149,7 +237,7 @@
               Mini Apps: Two small apps demonstrating fundamental programming
                skills, Tic Tac Toe and a double calculator
             </div>
-          </div><!-- main-projects-project -->
+          </div>
 
 
             <div class="main-projects-project">
@@ -175,7 +263,7 @@
                   <p class="main-projects-project-button-text">
                     See Project &rarr;
                   </p>
-                </div><!-- main-projects-project-button -->
+                </div>
               </a>
 
               <h5 class="main-projects-project-keywords">
@@ -186,7 +274,7 @@
                 Lenny's Franks: Front end example site, responsive design,
                 built without Bootstrap or other frameworks
               </div>
-            </div><!-- main-projects-project -->
+            </div>
 
             <div class="main-projects-project">
               <div
@@ -207,7 +295,7 @@
                   <p class="main-projects-project-button-text">
                     See Project &rarr;
                   </p>
-                </div><!-- main-projects-project-button -->
+                </div>
               </a>
 
               <h5 class="main-projects-project-keywords">
@@ -217,30 +305,30 @@
               <div class="main-projects-project-title">
                 Past work with Agile methodologies in Game Development
               </div>
-            </div><!-- main-projects-project -->
-          </div><!-- main-projects -->
+            </div>
+          </div>
       </main>
 
       <footer class="footer">
         <div class="footer-wrap">
           <div class="footer-title">Interested in working together?</div>
           <a href="mailto:ben.bracamonte@gmail.com?subject=Let's work together" class="footer-email-button">Email me</a>
-        </div><!-- footer-wrap -->
+        </div>
 
         <div class="footer-copyright">
           <span>Copyright Ben Bracamonte 2018</span>
-        </div><!-- footer-copyright -->
+        </div>
       </footer>
 
       <div class="modal-player">
         <div class="modal-player-wrapper">
           <iframe class="modal-player-video" src="https://player.vimeo.com/video/170528809" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-      </div> <!-- player-modal -->
+      </div>
 
       <div class="modal-player-close">
         <img class="modal-player-close-x" src="images/blueX.png" alt="Close Button">
       </div>
-    </div><!-- pagewrap -->
+    </div>
 </body>
-</html>
+</html> -->
