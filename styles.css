@@ -18,6 +18,10 @@
   transform: rotate(90deg);
 }
 
+.header-padding{
+  height: 55vh;
+}
+
 .border-t{
   border-top: .5em solid grey;
   border-left: .5em solid grey;
