@@ -48,6 +48,10 @@
     color: white;
 }
 
+.modal-lg {
+    max-width: 80% !important;
+}
+
 /*.resume-section{*/
   /*min-width: 18rem;*/
 /*}*/

@@ -101,8 +101,8 @@
 
           <section>
             <div class="pb-2">
-              <a href="#" target="_blank">
-                <img src="images/miniapps.png" alt="thumbnail of a tictacttoe and calculator icon" class="w-100">
+              <a data-toggle="modal" data-target="#appModal" id="miniappsThumb">
+                <img src="images/miniapps.png" alt="TicTacToe and a Calculator are pictured" class="w-100">
               </a>
             </div>
 
@@ -143,7 +143,6 @@
               Lenny's Franks: Front end example site, responsive design,
               built without Bootstrap or other frameworks
             </p>
-
           </section>
 
           <section>
@@ -171,7 +170,7 @@
     </div>
 
     <div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="playerModalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content bg-light">
           <div class="modal-body">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -185,6 +184,23 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="appModal" tabindex="-1" role="dialog" aria-labelledby="appModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content bg-light">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="mini-app" id="miniapps">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </main>
 
   <footer class="footer container-fluid bg-light border">
