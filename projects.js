@@ -1,5 +1,4 @@
 // jshint asi:true
-
 document.addEventListener('DOMContentLoaded', function(event) {
   const element = document.getElementById('miniappsThumb')
   element.addEventListener('click', function(event) {
