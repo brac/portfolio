@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  font-family: 'Roboto';
+}
+
+.pagewrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.calculator {
+  border-radius: 5px;
+  box-shadow: 10px 10px 100px grey;
+  flex: 0 0 234px;
+  margin: 4em auto auto auto;
+}
+
+.calculator-outputview {
+  background-color: #7B7B7B;
+  border-left: 1px solid #6E6E6E;
+  border-right: 1px solid #6E6E6E;
+  border-top: 1px solid #6E6E6E;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 78px;
+}
+
+  /*TODO: Align text to bottom when text gets smaller*/
+  .calculator-outputview-output{
+    color: white;
+    font-size: 3em;
+    padding: .5em .2em 0 0;
+    text-align: right;
+  }
+
+.calculator-keypad {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2em;
+  user-select: none;
+}
+
+  .calculator-keypad-inputkeys {
+    display: flex;
+    flex: .75;
+    flex-direction: column;
+  }
+
+  .calculator-keypad-functionkeys-functionkey,
+  .calculator-keypad-inputkeys-adjustkeys-adjustkey,
+  .calculator-keypad-inputkeys-numberkeys-numberkey {
+    transition: background-color 100ms;
+  }
+
+  .calculator-keypad-functionkeys {
+    background-color: #F38026;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid #6E6E6E;
+    display: flex;
+    flex: .25;
+    flex-direction: column;
+  }
+
+    .calculator-keypad-inputkeys-adjustkeys-adjustkey,
+    .calculator-keypad-inputkeys-numberkeys-numberkey {
+      padding: .66em 0 .66em 0;
+    }
+
+    .calculator-keypad-functionkeys-functionkey {
+      border-bottom: 1px solid #6E6E6E;
+      color: white;
+      flex: 1 0 auto;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .calculator-keypad-functionkeys-functionkey:hover {
+      background-color: #DF641E;
+    }
+
+    .calculator-keypad-functionkeys-functionkey:active {
+      background-color: #BF561C;
+    }
+
+    .calculator-keypad-functionkeys :last-child {
+      border-bottom-right-radius: 5px;
+    }
+
+  .calculator-keypad-inputkeys-adjustkeys {
+    background-color: #CDCDCD;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: row;
+  }
+
+    .calculator-keypad-inputkeys-adjustkeys-adjustkey {
+      border-bottom: 1px solid #7B7B7B;
+      flex: 1 0 30%;
+      text-align: center;
+    }
+
+    .calculator-keypad-inputkeys-adjustkeys-adjustkey:hover {
+      background-color: #ACADAD;
+    }
+
+    .calculator-keypad-inputkeys-adjustkeys-adjustkey:active {
+      background-color: #828484;
+    }
+
+    .calculator-keypad-inputkeys-adjustkeys-adjustkey:last-child {
+      border-left: 1px solid #7B7B7B;
+      border-right: 1px solid #7B7B7B;
+    }
+
+    .calculator-keypad-inputkeys-adjustkeys-adjustkey:first-child {
+      border-left: 1px solid #6E6E6E;
+      border-right: 1px solid #7B7B7B;
+    }
+
+  .calculator-keypad-inputkeys-numberkeys {
+    background-color: #D9D9D9;
+    border-bottom: 1px solid #6E6E6E;
+    border-left: 1px solid #6E6E6E;
+    border-right: 1px solid #7B7B7B;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom-left-radius: 5px;
+
+  }
+
+    .calculator-keypad-inputkeys-numberkeys-numberkey {
+      border-bottom: 1px solid #7B7B7B;
+      flex: 1 0 30%;
+      text-align: center;
+    }
+
+    .calculator-keypad-inputkeys-numberkeys-numberkey:last-child,
+    .calculator-keypad-inputkeys-numberkeys-numberkey:nth-last-child(2) {
+      border-bottom: 0;
+    }
+
+    .calculator-keypad-inputkeys-numberkeys :nth-last-child(2) {
+      border-bottom-left-radius: 5px;
+    }
+
+    .calculator-keypad-inputkeys-numberkeys :nth-child(3n) {
+      border-left: 1px solid #7B7B7B;
+    }
+
+    .calculator-keypad-inputkeys-numberkeys :nth-child(1),
+    .calculator-keypad-inputkeys-numberkeys :nth-child(4),
+    .calculator-keypad-inputkeys-numberkeys :nth-child(7) {
+      border-right: 1px solid #7B7B7B;
+    }
+
+    .calculator-keypad-inputkeys-numberkeys :last-child {
+      border-left: 1px solid #7B7B7B;
+      flex: 0 0 33%;
+    }
+
+    .calculator-keypad-inputkeys-numberkeys-numberkey:hover {
+      background-color: #ACAEAE;
+    }
+
+    .calculator-keypad-inputkeys-numberkeys-numberkey-flash,
+    .calculator-keypad-inputkeys-numberkeys-numberkey:active {
+      background-color: #7B7B7B;
+    }
+
+.unfocused {
+  opacity: 0.5;
+}
