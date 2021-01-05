@@ -102,17 +102,17 @@
 }
 
 @media screen and (max-width: 767px) {
-  .job-container{
-    display: -webkit-box;
-  }
-
-  .job-date {
-    -webkit-box-ordinal-group: 1;
-  }
-
   .iphone{
       flex: 0 0 100%;
       max-width: 100%;
-      -webkit-box-ordinal-group: 2;
+      /* -webkit-box-ordinal-group: 2; */
+  }
+
+  .job-date {
+    padding-bottom: 35px;
+  }
+
+  .job-desc {
+    margin-bottom: 0;
   }
 }
